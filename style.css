@@ -1,0 +1,151 @@
+.logo{
+  width:150px;
+  height:auto;
+  margin-right:10px;
+}
+@media (max-width: 768px){
+    .about{
+        padding-top:100px;
+        text-align:center;
+        justify-content:center;
+    }
+    .logo{
+        width:80px;
+    }
+}
+.container{
+  font-size:18px;
+  margin:0px auto;
+  padding:10px 10px;
+  color:white;
+}
+.about{
+    /* color: white; */
+    padding-top:200px;;
+}
+.contact-btn{
+    font-size: 18px;
+    font-weight:500;
+    background-color: #2E7D32;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+.contact-btn:hover,
+.btn-lg:hover,
+.nav-link:hover{
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 0 5px #4CAF50,
+        0 0 15px #4CAF50,
+        0 0 30px #4CAF50,
+        0 0 60px rgba(76,175,80,0.6);
+
+    transition: all 0.3s ease;
+}
+
+.nav-link{
+    color: white;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/* .nav-link:hover{
+    background-color: #2E7D32;
+    color: white !important;
+} */
+
+body{
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.6),
+            rgba(0,0,0,0.6)
+        ),
+        url("images/background.avif");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.line1,
+.line2{
+    display: block;
+}
+.title{
+    color: white;
+    font-size: clamp(2rem, 6vw, 4rem);
+
+    opacity: 0;
+    transform: translateY(60px);
+    animation: fadeUp 1s ease forwards;
+}
+
+.lead{
+    color: white;
+    margin: 20px 0;
+
+    opacity: 0;
+    transform: translateY(60px);
+    animation: fadeUp 1s ease 0.5s forwards;
+}
+
+.btn-lg{
+    background-color: #2E7D32;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 30px;
+
+    opacity: 0;
+    transform: translateY(60px);
+    animation: fadeUp 1s ease 1s forwards;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity: 0;
+        transform: translateY(60px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.glow{
+    color: #FFFFFF;
+    text-shadow:
+        0 0 5px #FFFFFF,
+        0 0 10px #FFD700,
+        0 0 20px #FFD700,
+        0 0 40px #FFD700;
+}
+
+@media (max-width: 991px){
+
+    .navbar-collapse{
+        background-color: white;
+        padding: 15px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+    .navbar-collapse .nav-link{
+        color: black !important;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+
+    .navbar-collapse .nav-link:hover,.contact-btn:hover{
+        background-color: #2E7D32;
+        color: white !important;
+        font-weight: 500;
+    }
+    
+}
